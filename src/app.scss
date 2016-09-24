@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'PokemonGB';
+  src: url(fonts/PokemonGb.ttf);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'PokemonGB';
+
+  .battle {
+    max-width: 600px;
+    margin: 0 auto;
+    .pokemon {
+
+      &.bot {
+        .info {
+          float: left;
+        }
+      }
+
+      &.user {
+        .info {
+          float: right;
+        }
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        border: 4px solid #404A38;
+        border-radius: 18px 8px 18px 8px;
+        text-transform: uppercase;
+        background-color: #F5F9D1;
+        width: 18em;
+        padding: .618em;
+        .name {
+          align-self: flex-start;
+        }
+        .hpbar {
+          display: flex;
+          align-items: center;
+          font-size: .8em;
+          width: 80%;
+          background-color: #546951;
+          border-radius: 12px;
+          padding: .2em .3em .2em .7em;
+          margin: .3em 0;
+          .label {
+            color: #F7BE4C;
+            font-weight: bold;
+            margin-top: 3px;
+          }
+          .bar {
+            height: .8em;
+            width: 100%;
+            background-color: #6CF09F;
+            border: 2px solid #fff;
+            border-radius: 4px;
+          }
+        }
+      }
+
+      .character {
+        max-height: 200px;
+        img {
+          width: 17em;
+          margin-top: -2em;
+        }
+      }
+    }
+  }
+
+  .row {
+    display: flex;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  #output {
+    background: #ccc;
+    width: 100%;
+    height: 10em;
+    overflow: auto;
+  }
+}
+

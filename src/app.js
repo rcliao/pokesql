@@ -19,6 +19,19 @@ angular.module('pokesql')
         console.log(e); 
       });
 
+      this.pokemon1 = {
+        id: 1,
+        name: 'Bulbasaur',
+        maxHp: 26,
+        hp: 26
+      };
+      this.pokemon2 = {
+        id: 25,
+        name: 'Pikachu',
+        maxHp: 42,
+        hp: 42
+      };
+
       function execute() {
         db.serialize(function() {
             db.each(self.query, function(err, row) {
@@ -33,4 +46,17 @@ angular.module('pokesql')
         });
       }
     }
-  })
+  });
+
+  angular.module('pokesql')
+    .component('pokeBattle', {
+      templateUrl: 'src/partials/battle.html',
+      bindings: {
+        pokemon1: '<',
+        pokemon2: '<'
+      },
+      controller: function($scope) {
+        var self = this;
+
+      }
+    })

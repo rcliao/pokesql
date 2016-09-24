@@ -1,0 +1,25 @@
+<section class="battle">
+	<div class="bot pokemon">
+		<div class="info">
+			<div class="name">{{$ctrl.pokemon1.name}}</div>
+			<div class="hpbar">
+				<span class="label">HP</span><div class="bar"></div>
+			</div>
+		</div>
+		<div class="character">
+			<img ng-src="src/imgs/{{$ctrl.pokemon1.id}}.png">
+		</div>
+	</div>
+	<div class="user pokemon">
+		<div class="info">
+			<div class="name">{{$ctrl.pokemon2.name}}</div>
+			<div class="hpbar">
+				<span class="label">HP</span><div class="bar"></div>
+			</div>
+			<div class="currenthp">{{$ctrl.pokemon2.hp}}/{{$ctrl.pokemon2.maxHp}}</div>
+		</div>
+		<div class="character">
+			<img ng-src="src/imgs/back/{{$ctrl.pokemon2.id}}.png">
+		</div>
+	</div>
+</section>

@@ -10,8 +10,12 @@
     <poke-sql-app></poke-sql-app>
 
     <script type="text/ng-template" id="control.html">
-      <div id="editor" style="height: 10em;"></div>
+      <poke-battle
+        pokemon1="$ctrl.pokemon1"
+        pokemon2="$ctrl.pokemon2"
+      ></poke-battle>
       
+      <div id="editor" style="height: 10em;"></div>
       <button ng-click="$ctrl.execute()">Execute</button>
 
       <div id="output">
