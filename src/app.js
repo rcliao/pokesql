@@ -16,7 +16,15 @@ angular.module('pokesql')
       this.output = [];
       
       editor.getSession().on('change', function(e) {
-        console.log(e); 
+        self.query = editor.getValue();
+      });
+      editor.commands.addCommand({
+        name: 'submit',
+        bindKey: {win: 'Ctrl-Enter',  mac: 'Command-Enter'},
+        exec: function(editor) {
+          execute();
+        },
+        readOnly: true // false if this command should not apply in readOnly mode
       });
 
       this.pokemon1 = {
@@ -41,6 +49,12 @@ angular.module('pokesql')
                 }
                 console.log(row);
                 self.output.push(row);
+                if (row.id) {
+                    self.pokemon2.id = row.id;
+                }
+                if (row.name) {
+                    self.pokemon2.name = row.name;
+                }
                 $scope.$apply();
             });
         });
