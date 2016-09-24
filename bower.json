@@ -22,6 +22,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "1.5.8"
+    "angular": "1.5.8",
+    "ace-builds": "^1.2.5"
   }
 }

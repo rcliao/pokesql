@@ -8,9 +8,16 @@ angular.module('pokesql')
     templateUrl: 'control.html',
     controller: function($scope) {
       console.log('loaded pokesql app component');
+      var editor = ace.edit('editor');
+      editor.setTheme('ace/theme/monokai');
+      editor.getSession().setMode('ace/mode/sql');
       var self = this;
       this.execute = execute;
       this.output = [];
+      
+      editor.getSession().on('change', function(e) {
+        console.log(e); 
+      });
 
       function execute() {
         db.serialize(function() {

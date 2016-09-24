@@ -10,7 +10,8 @@
     <poke-sql-app></poke-sql-app>
 
     <script type="text/ng-template" id="control.html">
-      <textarea name="" id="" cols="30" rows="10" ng-model="$ctrl.query"></textarea>
+      <div id="editor" style="height: 10em;"></div>
+      
       <button ng-click="$ctrl.execute()">Execute</button>
 
       <div id="output">
@@ -21,7 +22,10 @@
     </script>
   </body>
 
+  <script src="bower_components/ace-builds/src-noconflict/ace.js"></script>
+  <script src="bower_components/ace-builds/src-noconflict/mode-sql.js"></script>
   <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-ace/ui-ace.js"></script>
   <script>
     // You can also require other files to run in this process
     require('./src/app.js')
