@@ -13,8 +13,10 @@ body {
   font-family: 'PokemonGB';
 
   .battle {
-    max-width: 600px;
+    max-width: 680px;
     margin: 0 auto;
+    padding: 1em;
+    background: url(imgs/background.jpg) repeat-x;
     .pokemon {
 
       &.bot {
@@ -70,6 +72,7 @@ body {
         img {
           width: 17em;
           margin-top: -2em;
+          z-index: -1;
         }
       }
     }
