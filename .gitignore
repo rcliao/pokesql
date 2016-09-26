@@ -1,6 +1,10 @@
 node_modules
 bower_components
 .DS_STORE
+npm-debug.log
 
-src/*.css
+*.css
+app/*.js
 *.map
+
+typings/
