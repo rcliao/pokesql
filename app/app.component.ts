@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import * as sqlite3 from 'sqlite3';
+// import * as sqlite3 from 'sqlite3';
+
+declare var sqlite3: any;
 var db = new sqlite3.Database('pokedex.sqlite');
 
 @Component({
@@ -31,8 +33,8 @@ export class AppComponent implements OnInit {
         name: 'evil pikachu'
     };
     query: string;
-
-
+    
+    
     execute() {
         console.log(this.query);
         db.serialize(() => {
