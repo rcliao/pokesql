@@ -1,0 +1,118 @@
+ .battle {
+    position: relative;
+    z-index: 0;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 4em 2em 0;
+    background: url(app/imgs/background.jpg) repeat-x;
+    .pokemon {
+
+      &.bot {
+        .info {
+          float: left;
+
+          &:before {
+            width: 97%;
+            border-radius: 0 0 0 27px;
+          }
+
+          &:after {
+            border-bottom: 40px solid #404A38;
+            border-right: 52px solid transparent;
+            right: -40px;
+          }
+        }
+      }
+
+      &.user {
+        margin-bottom: -3em;
+        .info {
+          float: right;
+
+          &:before {
+            border-radius: 0 0 18px 0;
+          }
+
+          &:after {
+            border-bottom: 40px solid #404A38;
+            border-left: 52px solid transparent;
+            left: -40px;
+          }
+        }
+        .character {
+          background-position: left bottom;
+        }
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+        border: 4px solid #404A38;
+        border-radius: 18px 8px 18px 8px;
+        text-transform: uppercase;
+        background-color: #F5F9D1;
+        width: 18em;
+        padding: .618em;
+        margin-top: 1em;
+
+        &:before, 
+        &:after {
+          display: block;
+          content: '';
+          position: absolute;
+          bottom: -14px;
+          z-index: -1;
+        }
+
+        &:before {
+          left: 12px;
+          height: 50px;
+          width: 100%;
+          background: #404A38;
+        }
+
+        &:after {
+          height: 0;
+          width: 0;
+        }
+
+        .name {
+          align-self: flex-start;
+        }
+        .hpbar {
+          display: flex;
+          align-items: center;
+          font-size: .8em;
+          width: 80%;
+          background-color: #546951;
+          border-radius: 12px;
+          padding: .2em .3em .2em .7em;
+          margin: .3em 0;
+          .label {
+            color: #F7BE4C;
+            font-weight: bold;
+            margin-top: 3px;
+          }
+          .bar {
+            height: .8em;
+            width: 100%;
+            background-color: #6CF09F;
+            border: 2px solid #fff;
+            border-radius: 4px;
+          }
+        }
+      }
+
+      .character {
+        max-height: 200px;
+        background: url(app/imgs/grass.png) no-repeat right bottom;
+
+        img {
+          width: 17em;
+          margin-top: -2em;
+          margin-left: 2em;
+        }
+      }
+    }
+  }

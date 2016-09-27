@@ -23,7 +23,8 @@ var PokeBattleComponent = (function () {
     PokeBattleComponent = __decorate([
         core_1.Component({
             selector: 'poke-battle',
-            templateUrl: 'app/components/pokebattle.component.html'
+            templateUrl: 'app/components/pokebattle.component.html',
+            styleUrls: ['app/components/pokebattle.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], PokeBattleComponent);
