@@ -12,9 +12,10 @@ var db = new sqlite3.Database('pokedex.sqlite');
             [pokemon1]="pokemon1"
             [pokemon2]="pokemon2"
         ></poke-battle>
-        
-        <div id="editor" style="height: 10em;"></div>
-        <button (click)="execute()">Execute</button>
+
+        <poke-input
+            [hint]="'Choose Your Pokemon!'"
+        ></poke-input>
 
         <div id="output">
             <ul>
