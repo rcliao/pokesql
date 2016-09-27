@@ -1,10 +1,26 @@
- .battle {
+@font-face {
+  font-family: 'PokemonGB';
+  src: url(assets/fonts/PokemonGb.ttf);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'PokemonGB';
+
+<<<<<<< HEAD:app/app.scss
+=======
+  .battle {
     position: relative;
     z-index: 0;
     max-width: 680px;
     margin: 0 auto;
     padding: 4em 2em 0;
-    background: url(app/imgs/background.jpg) repeat-x;
+    background: url(assets/imgs/background.jpg) repeat-x;
     .pokemon {
 
       &.bot {
@@ -106,7 +122,7 @@
 
       .character {
         max-height: 200px;
-        background: url(app/imgs/grass.png) no-repeat right bottom;
+        background: url(assets/imgs/grass.png) no-repeat right bottom;
 
         img {
           width: 17em;
@@ -116,3 +132,20 @@
       }
     }
   }
+
+>>>>>>> change to angular cli strut:src/styles.scss
+  .row {
+    display: flex;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  #output {
+    background: #ccc;
+    width: 100%;
+    height: 10em;
+    overflow: auto;
+  }
+}

@@ -1,0 +1,13 @@
+<app-pokebattle
+    [pokemon1]="pokemon1"
+    [pokemon2]="pokemon2"
+></app-pokebattle>
+
+<app-poke-input
+  [hint]="'Choose Your Pokemon!'"
+></app-poke-input>
+<div id="output">
+    <ul>
+        <li ng-repeat="output in $ctrl.output">{{output}}</li>
+    </ul>
+</div>
