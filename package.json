@@ -5,7 +5,7 @@
   "angular-cli": {},
   "main": "main.js",
   "scripts": {
-    "start": "tsc && gulp sass && concurrently \"npm run tsc:w\" \"gulp\" \"electron .\" ",
+    "start": "concurrently \"ng build -w\" \"electron .\" ",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "lint": "tslint \"src/**/*.ts\"",
