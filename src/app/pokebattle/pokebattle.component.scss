@@ -4,7 +4,7 @@
    max-width: 680px;
    margin: 0 auto;
    padding: 4em 2em 0;
-   background: url(app/imgs/background.jpg) repeat-x;
+   background: url(assets/imgs/background.jpg) repeat-x;
    .pokemon {
 
      &.bot {
@@ -106,7 +106,7 @@
 
      .character {
        max-height: 200px;
-       background: url(app/imgs/grass.png) no-repeat right bottom;
+       background: url(assets/imgs/grass.png) no-repeat right bottom;
 
        img {
          width: 17em;
