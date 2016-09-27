@@ -1,0 +1,25 @@
+#output {
+	position: relative;
+	box-sizing: border-box;
+	z-index: 1;
+	padding: .3em;
+	background-color: #24302F;
+	height: 10em;
+	color: #fff;
+
+	ul {
+		box-sizing: border-box;
+		margin: 0;
+		padding: .5em 1em;
+		height: 100%;
+		background-color: #2C4F63;
+		border: 12px solid #C6A74A;
+		border-radius: 12px;
+		box-shadow: inset 0px 0px 5px 5px rgba(255,255,255,1);
+
+		li {
+			line-height: 2em;
+			list-style: none;
+		}
+	}
+}
