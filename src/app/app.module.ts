@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { StoreModule } from '@ngrx/store';
+import { pokemonReducer } from './reducers/pokemon';
 
 import { AppComponent } from './app.component';
 import { PokebattleComponent } from './pokebattle/pokebattle.component';
@@ -16,7 +18,8 @@ import { PokeInputComponent } from './poke-input/poke-input.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    StoreModule.provideStore({ pokemon: pokemonReducer })
   ],
   providers: [],
   bootstrap: [AppComponent]

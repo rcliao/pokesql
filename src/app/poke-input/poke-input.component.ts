@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PokeInputComponent implements OnInit {
   @Input()
-  hint
+  hint;
 
   constructor() { }
 
