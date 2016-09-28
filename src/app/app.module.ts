@@ -8,12 +8,14 @@ import { pokemonReducer } from './reducers/pokemon';
 import { AppComponent } from './app.component';
 import { PokebattleComponent } from './pokebattle/pokebattle.component';
 import { PokeInputComponent } from './poke-input/poke-input.component';
+import { PokeOutputComponent } from './poke-output/poke-output.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PokebattleComponent,
-    PokeInputComponent
+    PokeInputComponent,
+    PokeOutputComponent
   ],
   imports: [
     BrowserModule,
